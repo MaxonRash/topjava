@@ -20,6 +20,7 @@
     </tr>
     </thead>
     <tbody>
+    <jsp:useBean id="mealsList" scope="request" type="java.util.List"/>
     <c:forEach var="meals" items="${mealsList}">
         <tr>
             <td>${meals.dateTime}</td>
